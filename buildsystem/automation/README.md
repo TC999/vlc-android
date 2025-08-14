@@ -98,3 +98,27 @@ Before running, the app and the test apks will be generated automatically
 #### Upload the screenshots
 
 - `deploy_screenshots`
+
+## String Synchronization
+
+### String Synchronization
+
+#### Overview
+This script automatically synchronizes string resources from the main `values/strings.xml` file to all language-specific `values-*/strings.xml` files.
+It adds missing string entries without modifying existing translations, while preserving XML declarations, resources tag attributes, and comments.
+
+#### Requirements
+- Python 3.x
+- lxml library (install with `pip install lxml`)
+
+### Usage
+1. Ensure Python 3.x is installed
+2. Run the script from the project root directory:
+   ```
+   python buildsystem/automation/sync_strings.py
+   ```
+
+### Notes
+- Only adds missing string entries (existing entries remain unchanged)
+- Preserves original file encoding and formatting
+- Provides detailed console output of changes made
