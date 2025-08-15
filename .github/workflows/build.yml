@@ -61,7 +61,6 @@ jobs:
     #    git submodule update --init --recursive
 
     - name: 预编译（初始化 Gradle 构建环境）
-      working-directory: vlc-android
       run: |
         chmod +x buildsystem/compile.sh
         ./buildsystem/compile.sh -a $ABI
