@@ -60,6 +60,11 @@ jobs:
     #    cd vlc-android
     #    git submodule update --init --recursive
 
+    - name: 设置 git 身份
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+
     - name: 预编译（初始化 Gradle 构建环境）
       run: |
         chmod +x buildsystem/compile.sh
