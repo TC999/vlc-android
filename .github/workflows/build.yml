@@ -40,11 +40,11 @@ jobs:
       with:
         sdk-version: "28"
 
-    - name: 安装 Android NDK r21
+    - name: 安装 Android NDK r27
       run: |
-        wget https://dl.google.com/android/repository/android-ndk-r21e-linux-x86_64.zip
-        unzip android-ndk-r21e-linux-x86_64.zip
-        mv android-ndk-r21e ${{ github.workspace }}/android-ndk
+        wget https://dl.google.com/android/repository/android-ndk-r27d-linux.zip
+        unzip android-ndk-r27d-linux.zip
+        mv android-ndk-r27d ${{ github.workspace }}/android-ndk
         echo "ANDROID_NDK=${{ github.workspace }}/android-ndk" >> $GITHUB_ENV
 
     - name: 配置环境变量
