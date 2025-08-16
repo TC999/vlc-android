@@ -68,7 +68,7 @@ jobs:
     - name: 预编译（初始化 Gradle 构建环境）
       run: |
         chmod +x buildsystem/compile.sh
-        ./buildsystem/compile.sh -a $ABI
+        ./buildsystem/compile.sh -l -a $ABI
 
     - name: 编译 debug APK
       run: |
