@@ -12,7 +12,7 @@ jobs:
       LANG: zh_CN.UTF-8
       ANDROID_SDK_ROOT: ${{ github.workspace }}/android-sdk
       ANDROID_NDK_VERSION: "27.4.7075529"   # NDK r27
-      ABI: "arm64-v8a"   # 可根据需求调整，比如 "all"、"arm"、"x86" 等
+      ABI: "all"   # 可根据需求调整，比如 "all"、"arm"、"x86" 等
 
     steps:
     - name: 汉化
@@ -40,7 +40,7 @@ jobs:
       with:
         sdk-version: "34"
 
-    - name: 安装 Android NDK r21
+    - name: 安装 Android NDK r27
       run: |
         wget https://dl.google.com/android/repository/android-ndk-r27c-linux.zip
         unzip android-ndk-r27c-linux.zip
@@ -71,7 +71,6 @@ jobs:
         ./buildsystem/compile.sh -a $ABI
 
     - name: 编译 debug APK
-      working-directory: vlc-android
       run: |
         ./gradlew assembleDebug
 
