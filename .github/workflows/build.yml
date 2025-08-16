@@ -11,7 +11,7 @@ jobs:
     env:
       LANG: zh_CN.UTF-8
       ANDROID_SDK_ROOT: ${{ github.workspace }}/android-sdk
-      ANDROID_NDK_VERSION: "27.4.7075529"   # NDK r27
+      #ANDROID_NDK_VERSION: "27.4.7075529"   # NDK r27
       ABI: "arm64"   # 可根据需求调整，比如 "all"、"arm"、"x86" 等
 
     steps:
@@ -38,13 +38,13 @@ jobs:
     - name: 安装 Android SDK
       uses: android-actions/setup-android@v3
       with:
-        sdk-version: "34"
+        sdk-version: "28"
 
-    - name: 安装 Android NDK r27
+    - name: 安装 Android NDK r21
       run: |
-        wget https://dl.google.com/android/repository/android-ndk-r27c-linux.zip
-        unzip android-ndk-r27c-linux.zip
-        mv android-ndk-r27c ${{ github.workspace }}/android-ndk
+        wget https://dl.google.com/android/repository/android-ndk-r21e-linux-x86_64.zip
+        unzip android-ndk-r21e-linux-x86_64.zip
+        mv android-ndk-r21e ${{ github.workspace }}/android-ndk
         echo "ANDROID_NDK=${{ github.workspace }}/android-ndk" >> $GITHUB_ENV
 
     - name: 配置环境变量
@@ -68,7 +68,8 @@ jobs:
     - name: 预编译（初始化 Gradle 构建环境）
       run: |
         chmod +x buildsystem/compile.sh
-        ./buildsystem/compile.sh -l -a $ABI
+        #./buildsystem/compile.sh -l -a $ABI
+        ./buildsystem/compile.sh
 
     - name: 编译 debug APK
       run: |
