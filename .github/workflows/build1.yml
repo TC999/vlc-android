@@ -9,13 +9,13 @@ on:
   workflow_dispatch:
 
 env:
-  VLC_ANDROID_IMAGE_40: registry.videolan.org/vlc-debian-android:20250626142950
+  #VLC_ANDROID_IMAGE_40: registry.videolan.org/vlc-debian-android:20250626142950
 
 jobs:
   build-apk:
     runs-on: ubuntu-latest
     container:
-      image: ${{ env.VLC_ANDROID_IMAGE_40 }}
+      image: registry.videolan.org/vlc-debian-android:20250626142950
     steps:
       - uses: actions/checkout@v4
 
@@ -40,9 +40,9 @@ jobs:
   release:
     runs-on: ubuntu-latest
     container:
-      image: ${{ env.VLC_ANDROID_IMAGE_40 }}
+      image: registry.videolan.org/vlc-debian-android:20250626142950
     needs: build-apk
-    if: startsWith(github.ref, 'refs/tags/')
+    #if: startsWith(github.ref, 'refs/tags/')
     steps:
       - uses: actions/checkout@v4
       #- name: 配置 Android Keystore（如有需要）
