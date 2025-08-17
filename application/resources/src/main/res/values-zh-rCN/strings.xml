@@ -392,7 +392,7 @@
   <string name="save_brightness_title">记住亮度级别</string>
   <string name="save_audiodelay_summary">保存每个视频相应的音频延迟</string>
   <string name="save_audiodelay_title">保存音频延迟</string>
-  <string name="video_show_orientation_button">Show orientation button</string>
+  <string name="video_show_orientation_button">显示方向按钮</string>
   <string name="enable_brightness_gesture_title">亮度手势</string>
   <string name="enable_brightness_gesture_summary">在视频回放过程中，通过手势控制显示亮度</string>
   <string name="enable_volume_gesture_title">音量手势</string>
@@ -645,8 +645,8 @@
   <string name="network_shares_discovery">查找网络共享</string>
   <string name="network_empty">该目录为空。</string>
   <string name="network_connection_needed">本地网络无连接。</string>
-  <string name="network_disabled">Network browsing disabled</string>
-  <string name="browse_network">Browse network</string>
+  <string name="network_disabled">网络浏览已禁用</string>
+  <string name="browse_network">浏览网络</string>
   <string name="search_hint">搜索媒体</string>
   <string name="search_in_list_hint">在当前列表中搜索</string>
   <string name="search_global">在所有媒体库中搜索媒体</string>
