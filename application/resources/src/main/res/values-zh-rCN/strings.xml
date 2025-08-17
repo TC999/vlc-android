@@ -133,9 +133,9 @@
   <string name="bookmarks">书签</string>
   <string name="equalizer">均衡器</string>
   <string name="import_equalizer">导入均衡器</string>
-  <string name="equalizer_exported">Equalizer(s) exported to %s</string>
-  <string name="equalizer_copy_template">(copy%s)</string>
-  <string name="new_equalizer_copy_template">New equalizer%s</string>
+  <string name="equalizer_exported">均衡器已导出到 %s</string>
+  <string name="equalizer_copy_template">(副本%s)</string>
+  <string name="new_equalizer_copy_template">新均衡器%s</string>
   <string name="show_all">全部显示</string>
   <string name="hide_all">全部隐藏</string>
   <string name="export_all">全部导出</string>
@@ -621,7 +621,7 @@
   <string name="browser_quick_play_default_summary">启用后，点击浏览器项目将使用快速播放进行播放</string>
   <string name="serious_crash">真不走运，发生了很严重的错误，VLC 不得不关闭鸟。</string>
   <string name="help_us_send_log">您可以将下述崩溃日志发送给我们，协助改进 VLC:</string>
-  <string name="ml_crash_send">The media library just crashed. Help us by sending the logs.</string>
+  <string name="ml_crash_send">媒体库刚刚崩溃。请通过发送日志来帮助我们。</string>
   <string name="restart_vlc">重新启动 VLC</string>
   <string name="send_log">发送日志</string>
   <string name="sending_log">正在发送日志…</string>
@@ -925,8 +925,8 @@
   <string name="validation_delete_playlist_text">此操作不可撤消。</string>
   <string name="display_settings">显示设置</string>
   <string name="incognito_mode">隐身模式</string>
-  <string name="persistent_incognito_mode">Persistent incognito mode</string>
-  <string name="persistent_incognito_mode_summary">Keep the incognito mode enabled even if the app is restarted</string>
+  <string name="persistent_incognito_mode">持久隐身模式</string>
+  <string name="persistent_incognito_mode_summary">即使重启应用也保持隐身模式开启</string>
   <string name="display_in_list">以列表形式显示</string>
   <string name="display_in_grid">以网格形式显示</string>
   <string name="dump_db_succes">数据库已转储到内部存储的根目录中</string>
@@ -935,16 +935,16 @@
   <string name="send_crash_description">您可通过发送与此次崩溃相关的数据，来帮助我们提升 VLC 的稳定性。</string>
   <string name="send_crash_warning">若存在您不希望发送的敏感数据，请确保取消选中它们。</string>
   <string name="include_medialib">同时发送您的数据库（含媒体库信息！）</string>
-  <string name="include_logs">Include your logs</string>
+  <string name="include_logs">包含日志</string>
   <string name="vlc_reporter">VLC 辅助报告程序</string>
   <string name="welcome_beta_title">VLC beta</string>
   <string name="welcome_beta_description">欢迎使用 VLC beta 版。\n请注意此版本可能一定量的 bug。</string>
   <string name="welcome_beta_description_bugs">如果您发现了 bug，请在我们的论坛或 bug 跟踪平台报告它们。</string>
-  <string name="welcome_beta_description_crashes">If you experience a bug or a crash, please open the About screen and Use the Feedback &gt; Contact the support team button.</string>
+  <string name="welcome_beta_description_crashes">如果您遇到 bug 或崩溃，请打开关于界面并使用反馈 > 联系支持团队按钮。</string>
   <string name="send">发送</string>
   <string name="send_crash_action_title">您打算做什么?</string>
   <string name="report_a_bug">报告 bug</string>
-  <string name="send_feedback">Send feedback</string>
+  <string name="send_feedback">发送反馈</string>
   <string name="report_a_crash">报告崩溃事件</string>
   <string name="describe_crash">请描述一下崩溃发生时的情况</string>
   <string name="favorite">收藏</string>
@@ -1128,8 +1128,8 @@
   <string name="bookmark_name">添加 %s 为书签</string>
   <string name="add_bookmark">添加书签</string>
   <string name="bookmark_added">已添加书签</string>
-  <string name="previous_bookmark">Previous bookmark</string>
-  <string name="next_bookmark">Next bookmark</string>
+  <string name="previous_bookmark">上一个书签</string>
+  <string name="next_bookmark">下一个书签</string>
   <string name="show">显示</string>
   <string name="optional_features">可选功能</string>
   <string name="optional_features_summary">目前正在测试中的 Beta 功能，可能并不稳定 </string>
@@ -1147,11 +1147,11 @@
   <string name="play_media">播放 %s</string>
 
   <!-- Duplication Warning Dialog -->
-  <string name="edit_eq_preset">Edit equalizer preset</string>
-  <string name="edit_eq_name_not_allowed">This name is not allowed</string>
-  <string name="export_equalizer">Export equalizer</string>
-  <string name="hide_equalizer">Hide equalizer</string>
-  <string name="show_equalizer">Show equalizer</string>
+    <string name="edit_eq_preset">编辑均衡器预设</string>
+    <string name="edit_eq_name_not_allowed">该名称不允许</string>
+    <string name="export_equalizer">导出均衡器</string>
+    <string name="hide_equalizer">隐藏均衡器</string>
+    <string name="show_equalizer">显示均衡器</string>
   <string name="message_primary_default">添加重复项？</string>
   <string name="add_button">添加</string>
   <string name="add_all_button">添加全部</string>
@@ -1312,7 +1312,7 @@
   <string name="ra_prepare_download">正在准备要下载的内容</string>
   <string name="ra_forbidden">内容访问已在 ｢设置｣ 中禁用</string>
   <string name="ra_playback_forbidden">播放控制已在 ｢设置｣ 中禁用</string>
-  <string name="ra_logs_forbidden">Logs sharing disabled in the settings</string>
+  <string name="ra_logs_forbidden">日志共享已在 ｢设置｣ 中禁用</string>
   <string name="ra_code_requested_explanation">为保护服务器的安全，我们采取了验证措施。\n请输入通知消息中显示的验证码</string>
   <string name="ra_ssl_explanation_title">未加密的连接</string>
   <string name="ra_ssl_explanation">您的连接未加密。</string>
@@ -1354,7 +1354,7 @@
   <string name="help">帮助</string>
   <string name="podcast_mode">播客模式</string>
   <string name="podcast_mode_help">在播放单条音轨且符合下列条件之一时，会出现 ｢播客｣ 模式控制按钮:\n\t• 时长超过 60 分钟\n\t• 时长超过 15 分钟，且没有专辑名称\n\t• 流派类型为 %s</string>
-  <string name="podcast_mode_genres">audiobook(s), podcast, speech, or vocal</string>
+  <string name="podcast_mode_genres">有声书、播客、演讲或人声</string>
   <string name="voice_control">语音控制</string>
   <string name="voice_control_help">VLC 支持通过 Google Assistant 控制，命令词如下:\n\t• Play (播放), Pause (暂停), Stop (停止), Previous (上一曲), Next (下一曲)\n\t• Rewind (快退), Fast Forward (快进), Repeat &lt;all|one|off&gt;(全部循环/单曲循环/不循环)\n\t• Jump to &lt;time&gt; (跳到某时刻), Skip &lt;duration&gt; (前进某时长)\n\t• What\'s this &lt;artist|album|song&gt; (正在播放的艺人/专辑/曲名是什么?)\n\t• Play [artist|album|song|genre|playlist] &lt;name&gt; (播放指定艺人/专辑/曲目/流派/播放列表)</string>
 
@@ -1375,7 +1375,7 @@
   <string name="export_settings">导出设置</string>
   <string name="restore_settings_summary">使用之前导出的文件恢复您的设置参数</string>
   <string name="restore_settings">恢复设置</string>
-  <string name="obsolete_restore_settings">Your settings export is obsolete. Please export them again</string>
+  <string name="obsolete_restore_settings">您的设置导出文件已过期，请重新导出</string>
   <string name="export_settings_success">设置参数已成功导出到内部存储根目录</string>
   <string name="export_settings_failure">导出设置参数时出现错误</string>
 
@@ -1391,29 +1391,29 @@
   <string name="queue_format">队列格式</string>
   <string name="queue_format_short_desc">队列位置</string>
   <string name="queue_format_long_desc">队列位置 / 队列总长</string>
-  <string name="video_settings_disclaimer">Some settings have been moved to the video controls settings in the video player.</string>
-  <string name="get_help">Get some help</string>
-  <string name="feedback_type">Feedback type</string>
-  <string name="how_to_use">Learn how to use</string>
-  <string name="send_feedback_request">Feedback / feature request</string>
-  <string name="report_crash">Report a crash</string>
-  <string name="email_support">Contact the support team by email</string>
-  <string name="read_doc">Read the documentation</string>
-  <string name="subject">Subject</string>
-  <string name="body">Message</string>
-  <string name="rate_us">Rate the app</string>
-  <string name="generating_logs">Generating logs. Please wait.</string>
-  <string name="default_playback_action">Playback action</string>
-  <string name="files">Files</string>
-  <string name="remote_access_feedback_generate">Generate report</string>
-  <string name="remote_access_feedback_generated">Your feedback report has been generated</string>
-  <string name="remote_access_feedback_generated_explanation">Tap the button below to send it using your default email client. If you encounter any issues, you can copy paste the fields below and send the email yourself.</string>
-  <string name="remote_access_feedback_file_explanation">You just downloaded the needed file. Please remember to attach it to your email.</string>
-  <string name="generic_copied_to_clipboard">Copied to clipboard</string>
-  <string name="feedback_email_warning">No email client installed</string>
-  <string name="feedback_email_warning_explanation">The easiest way to share your feedback is to use the %1$s feature.\nTo do so, enable the remote access in the settings, follow the instructions and choose the %2$s entry in the menu.</string>
-  <string name="feedback_email_warning_remote_action">Open the settings</string>
-  <string name="feedback_email_warning_try_anyway">Try anyway</string>
+  <string name="video_settings_disclaimer">部分设置已移至视频播放器中的视频控制设置。</string>
+  <string name="get_help">获取帮助</string>
+  <string name="feedback_type">反馈类型</string>
+  <string name="how_to_use">了解如何使用</string>
+  <string name="send_feedback_request">反馈 / 功能请求</string>
+  <string name="report_crash">报告崩溃</string>
+  <string name="email_support">通过电子邮件联系支持团队</string>
+  <string name="read_doc">阅读文档</string>
+  <string name="subject">主题</string>
+  <string name="body">消息</string>
+  <string name="rate_us">为应用评分</string>
+  <string name="generating_logs">正在生成日志，请稍候。</string>
+  <string name="default_playback_action">播放操作</string>
+  <string name="files">文件</string>
+  <string name="remote_access_feedback_generate">生成报告</string>
+  <string name="remote_access_feedback_generated">您的反馈报告已生成</string>
+  <string name="remote_access_feedback_generated_explanation">点击下方按钮，使用默认邮件客户端发送。如果遇到问题，可复制下方内容自行发送邮件。</string>
+  <string name="remote_access_feedback_file_explanation">您刚刚下载了所需文件，请记得将其附加到邮件中。</string>
+  <string name="generic_copied_to_clipboard">已复制到剪贴板</string>
+  <string name="feedback_email_warning">未安装邮件客户端</string>
+  <string name="feedback_email_warning_explanation">分享反馈的最简单方式是使用 %1$s 功能。\n为此，请在设置中启用远程访问，按照说明操作，并在菜单中选择 %2$s 项。</string>
+  <string name="feedback_email_warning_remote_action">打开设置</string>
+  <string name="feedback_email_warning_try_anyway">仍然尝试</string>
   <string name="forum_url">https://forum.videolan.org/viewforum.php?f=35</string>
   <string name="doc_url">https://docs.videolan.me/vlc-user/android/</string>
 </resources>
