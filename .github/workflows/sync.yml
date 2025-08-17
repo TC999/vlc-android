@@ -42,10 +42,9 @@ jobs:
         git push origin sync
 
     - name: 强制同步
-      if: ${{ inputs.force_pull }} || failure()
+      if: ${{ failure() || inputs.force_pull }}
       run: |
         git remote add upstream https://code.videolan.org/videolan/vlc-android.git
         git fetch upstream
         git reset --hard upstream/master
-
         git push origin sync --force
