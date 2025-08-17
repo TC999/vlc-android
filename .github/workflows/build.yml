@@ -78,9 +78,9 @@ jobs:
         #./buildsystem/compile.sh -l
         ./buildsystem/compile.sh --init
 
-    - name: 编译 debug APK
+    - name: 编译 APK
       run: |
-        ./gradlew assembleDebug
+        ./gradlew assembleRelease
 
     - name: 复制 apk
       run: find . -type f -name "*.apk" -exec cp {} . \;
