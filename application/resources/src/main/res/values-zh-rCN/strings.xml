@@ -702,7 +702,7 @@
   <string name="whats_next">需要我做什么吗?</string>
   <string name="widget_old_description_end">我们侦测到您的启动器中已经放置 VLC 小工具。不幸的是，旧版小工具与改进版不兼容。\n根据启动器规则的不同，您可能需要先删除旧版小工具才能改用新版。</string>
   <string name="click_here">点击了解更多信息。</string>
-  <string name="widget_default_text">VLC media player</string>
+  <string name="widget_default_text">VLC 媒体播放器</string>
   <string name="allow_storage_access_title">允许 VLC 访问视频与音频文件</string>
   <string name="allow_storage_access_description">VLC 需要您授权方可访问该设备上的媒体文件。</string>
   <string name="partial_content">VLC 无法访问您的所有文件</string>
