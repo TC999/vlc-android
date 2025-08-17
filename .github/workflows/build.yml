@@ -75,7 +75,8 @@ jobs:
       run: |
         chmod +x buildsystem/compile.sh
         #./buildsystem/compile.sh -l -a $ABI
-        ./buildsystem/compile.sh -l
+        #./buildsystem/compile.sh -l
+        ./buildsystem/compile.sh --init
 
     - name: 编译 debug APK
       run: |
