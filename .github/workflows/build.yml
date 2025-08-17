@@ -82,8 +82,11 @@ jobs:
       run: |
         ./gradlew assembleDebug
 
+    - name: 复制 apk
+      run: find . -type f -name "*.apk" -exec cp {} . \;
+
     - name: 上传 APK 到 workflow artifacts
       uses: actions/upload-artifact@v4
       with:
         name: vlc-android-apk
-        path: application/build/outputs/apk/debug/*.apk
+        path: ./*.apk
