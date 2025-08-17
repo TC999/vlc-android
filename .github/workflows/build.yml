@@ -80,7 +80,7 @@ jobs:
 
     - name: 编译 APK
       run: |
-        ./gradlew assembleRelease
+        ./gradlew assembleDebug
 
     - name: 复制 apk
       run: find . -type f -name "*.apk" -exec cp {} . \;
