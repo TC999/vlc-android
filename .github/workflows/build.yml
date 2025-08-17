@@ -10,7 +10,7 @@ jobs:
 
     env:
       LANG: zh_CN.UTF-8
-      #ANDROID_SDK_ROOT: ${{ github.workspace }}/android-sdk
+      ANDROID_SDK_ROOT: ${{ github.workspace }}/android-sdk
       #ANDROID_NDK_VERSION: "27.4.7075529"   # NDK r27
       ABI: "arm64"   # 可根据需求调整，比如 "all"、"arm"、"x86" 等
 
