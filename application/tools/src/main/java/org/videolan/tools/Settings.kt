@@ -4,13 +4,12 @@ import android.app.Activity
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Build
-import android.telephony.TelephonyManager
 import androidx.core.content.edit
-import androidx.core.content.getSystemService
 import androidx.lifecycle.MutableLiveData
 import androidx.preference.PreferenceManager
 import org.videolan.tools.Settings.audioControlsChangeListener
 import org.videolan.tools.Settings.init
+import org.videolan.tools.Settings.initPostMigration
 import java.io.File
 
 object Settings : SingletonHolder<SharedPreferences, Context>({ init(it.applicationContext) }) {
@@ -79,7 +78,7 @@ object Settings : SingletonHolder<SharedPreferences, Context>({ init(it.applicat
         fastplaySpeed = prefs.getInt(FASTPLAY_SPEED, 20) / 10f
     }
 
-    fun Context.isPinCodeSet() = Settings.getInstance(this).getString(KEY_SAFE_MODE_PIN, "")?.isNotBlank() == true
+    fun Context.isPinCodeSet() = getInstance(this).getString(KEY_SAFE_MODE_PIN, "")?.isNotBlank() == true
 
 
     /**
@@ -200,6 +199,7 @@ const val KEYSTORE_PASSWORD_IV = "keystore_encrypted_password_iv"
 const val ENCRYPTED_KEY_NAME = "encryption_key"
 const val KEY_COOKIE_ENCRYPT_KEY = "cookie_encrypt_key"
 const val KEY_COOKIE_SIGN_KEY = "cookie_sign_key"
+const val KEY_REMOTE_ACCESS_INFO = "remote_access_info"
 
 //Equalizer
 const val KEY_CURRENT_EQUALIZER_ID = "current_equalizer_id"
@@ -266,7 +266,6 @@ const val RESULT_UPDATE_SEEN_MEDIA = Activity.RESULT_FIRST_USER + 4
 const val RESULT_UPDATE_ARTISTS = Activity.RESULT_FIRST_USER + 5
 
 const val BETA_WELCOME = "beta_welcome"
-const val CRASH_DONT_ASK_AGAIN = "crash_dont_ask_again"
 
 const val PLAYBACK_HISTORY = "playback_history"
 const val AUDIO_RESUME_PLAYBACK = "audio_resume_playback"
@@ -424,14 +423,10 @@ const val KEY_FRAGMENT_ID = "fragment_id"
 
 class DeviceInfo(context: Context) {
     val pm = context.packageManager
-    val tm = context.getSystemService<TelephonyManager>()!!
-    val isPhone = tm.phoneType != TelephonyManager.PHONE_TYPE_NONE
     val hasTsp = pm.hasSystemFeature("android.hardware.touchscreen")
     val isAndroidTv = pm.hasSystemFeature("android.software.leanback")
-    val watchDevices = isAndroidTv && Build.MODEL.startsWith("Bouygtel")
     val isChromeBook = pm.hasSystemFeature("org.chromium.arc.device_management")
     val isTv = isAndroidTv || !isChromeBook && !hasTsp
-    val isAmazon = "Amazon" == Build.MANUFACTURER
 }
 
 @Suppress("UNCHECKED_CAST")

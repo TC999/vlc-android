@@ -234,7 +234,7 @@ class RemoteAccessServer(private val context: Context) : PlaybackService.Callbac
      * Start the server. Refresh the authentication settings before
      * Also start monitoring the network shares for the web browser
      */
-    suspend fun start() {
+    fun start() {
         Settings.getInstance(context).putSingle(
             KEY_REMOTE_ACCESS_LAST_STATE_STOPPED, false)
         clearFileDownloads()
@@ -822,13 +822,6 @@ class RemoteAccessServer(private val context: Context) : PlaybackService.Callbac
         }
     }
 
-    fun sslEnabled():Boolean {
-        if (::engine.isInitialized) {
-            return engine.environment.connectors.firstOrNull { it.type.name == "HTTPS" } != null
-        }
-        return false
-    }
-
     /**
      * Get IP address from first non-localhost interface
      * @param useIPv4   true=return ipv4, false=return ipv6
@@ -1000,14 +993,14 @@ class RemoteAccessServer(private val context: Context) : PlaybackService.Callbac
     data class NowPlaying(val title: String, val artist: String, val playing: Boolean, val isVideoPlaying: Boolean, val progress: Long,
                           val duration: Long, val id: Long, val artworkURL: String, val uri: String, val volume: Int, val speed: Float,
                           val sleepTimer: Long, val waitForMediaEnd:Boolean, val resetOnInteraction:Boolean, val shuffle: Boolean, val repeat: Int,
-                          val shouldShow: Boolean = PlaylistManager.playingState.value ?: false,
+                          val shouldShow: Boolean = PlaylistManager.playingState.value == true,
                           val bookmarks: List<WSBookmark> = listOf(), val chapters: List<WSChapter> = listOf()) : WSMessage(WSMessageType.NOW_PLAYING)
 
     data class WSBookmark(val id:Long, val title: String, val time: Long)
     data class WSChapter(val title: String, val time: Long)
 
     data class PlayQueue(val medias: List<PlayQueueItem>) : WSMessage(WSMessageType.PLAY_QUEUE)
-    data class PlayQueueItem(val id: Long, val title: String, val artist: String, val duration: Long, val artworkURL: String, val playing: Boolean, val resolution: String = "", val path: String = "", val isFolder: Boolean = false, val progress: Long = 0L, val played: Boolean = false, var fileType: String = "", val favorite: Boolean = false)
+    data class PlayQueueItem(val id: Long, val title: String, var artist: String, val duration: Long, val artworkURL: String, val playing: Boolean, val resolution: String = "", val path: String = "", val isFolder: Boolean = false, val progress: Long = 0L, val played: Boolean = false, var fileType: String = "", val favorite: Boolean = false)
     data class WebSocketAuthorization(val status:String, val initialMessage:String) : WSMessage(WSMessageType.AUTH)
     data class Volume(val volume: Int) : WSMessage(WSMessageType.VOLUME)
     data class PlayerStatus(val playing: Boolean) : WSMessage(WSMessageType.PLAYER_STATUS)
