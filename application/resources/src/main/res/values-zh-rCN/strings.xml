@@ -244,8 +244,6 @@
 
     <string name="streams">串流</string>
     <string name="open_mrl_dialog_msg">请输入网络地址: 如 http://、mms:// 或 rtsp://</string>
-    <string name="encountered_error_title">播放错误</string>
-    <string name="encountered_error_message">VLC 处理该媒体时发生错误。\n请尝试刷新媒体库。</string>
     <string name="invalid_location">无法播放位置 %1$s。</string>
     <string name="missing_location">此媒体所存放的位置暂不可用，无法播放。</string>
 
@@ -908,7 +906,6 @@
     <string name="eq_snap_bands">同时影响附近频段</string>
     <string name="enable_equalizer">启用</string>
     <string name="preamp">前置放大器</string>
-    <string name="presets">预设</string>
     <string name="reset">重置</string>
     <plurals name="tracks_inserted">
         <item quantity="other">%d 条轨道已插入</item>
