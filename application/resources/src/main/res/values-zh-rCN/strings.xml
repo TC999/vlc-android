@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<xml version="1.0" encoding="utf-8">
 <resources xmlns:tools="http://schemas.android.com/tools"
         tools:ignore="MissingTranslation">
 
@@ -1380,29 +1380,29 @@
   <string name="title_size">标题文字大小</string>
   <string name="subtitle_size">字幕文字大小</string>
 
-    <string name="queue_format">队列格式</string>
-    <string name="queue_format_short_desc">队列位置</string>
-    <string name="queue_format_long_desc">队列位置 / 队列总长</string>
-    <string name="video_settings_disclaimer">部分设置项已移至视频播放器中的视频控制按钮设置。</string>
-    <string name="get_help">获取帮助</string>
-    <string name="feedback_type">反馈类型</string>
-    <string name="how_to_use">了解如何使用</string>
-    <string name="send_feedback_request">反馈 / 功能请求</string>
-    <string name="report_crash">报告崩溃事件</string>
-    <string name="email_support">通过电子邮件联系支持团队</string>
-    <string name="read_doc">阅读文档</string>
-    <string name="subject">主题</string>
-    <string name="body">邮件正文</string>
-    <string name="rate_us">给应用打分</string>
-    <string name="generating_logs">正在生成日志，请稍候。</string>
-    <string name="default_playback_action">｢播放｣ 动作</string>
-    <string name="files">文件</string>
-    <string name="remote_access_feedback_generate">生成报告</string>
-    <string name="remote_access_feedback_generated">您的反馈报告已生成</string>
-    <string name="remote_access_feedback_generated_explanation">点击下方按钮，将使用您默认的电子邮件客户端发送它。如果发送时出现问题，可复制、粘贴以下字段，手动发送电子邮件。</string>
-    <string name="remote_access_feedback_file_explanation">您已下载所需的文件。请记得将它作为电子邮件的附件发出。</string>
-    <string name="generic_copied_to_clipboard">已复制到剪贴板</string>
-    <string name="feedback_email_warning">未安装电子邮件客户端</string>
-    <string name="feedback_email_warning_remote_action">打开设置</string>
-    <string name="feedback_email_warning_try_anyway">仍然尝试</string>
-    </resources>
+  <string name="queue_format">队列格式</string>
+  <string name="queue_format_short_desc">队列位置</string>
+  <string name="queue_format_long_desc">队列位置 / 队列总长</string>
+  <string name="video_settings_disclaimer">部分设置项已移至视频播放器中的视频控制按钮设置。</string>
+  <string name="get_help">获取帮助</string>
+  <string name="feedback_type">反馈类型</string>
+  <string name="how_to_use">了解如何使用</string>
+  <string name="send_feedback_request">反馈 / 功能请求</string>
+  <string name="report_crash">报告崩溃事件</string>
+  <string name="email_support">通过电子邮件联系支持团队</string>
+  <string name="read_doc">阅读文档</string>
+  <string name="subject">主题</string>
+  <string name="body">邮件正文</string>
+  <string name="rate_us">给应用打分</string>
+  <string name="generating_logs">正在生成日志，请稍候。</string>
+  <string name="default_playback_action">｢播放｣ 动作</string>
+  <string name="files">文件</string>
+  <string name="remote_access_feedback_generate">生成报告</string>
+  <string name="remote_access_feedback_generated">您的反馈报告已生成</string>
+  <string name="remote_access_feedback_generated_explanation">点击下方按钮，将使用您默认的电子邮件客户端发送它。如果发送时出现问题，可复制、粘贴以下字段，手动发送电子邮件。</string>
+  <string name="remote_access_feedback_file_explanation">您已下载所需的文件。请记得将它作为电子邮件的附件发出。</string>
+  <string name="generic_copied_to_clipboard">已复制到剪贴板</string>
+  <string name="feedback_email_warning">未安装电子邮件客户端</string>
+  <string name="feedback_email_warning_remote_action">打开设置</string>
+  <string name="feedback_email_warning_try_anyway">仍然尝试</string>
+</resources>

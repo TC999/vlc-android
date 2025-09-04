@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<xml version="1.0" encoding="utf-8">
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="unknown_artist">അജ്ഞാത കലാകാരന്‍</string>
     <string name="unknown_album">അജ്ഞാത ആല്‍ബം</string>
